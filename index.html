@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="hero">
+        <header class="medio">
+            <ul>
+                <li><a href="">About us</a></li>
+                <li><a href="">Films</a></li>
+                <li><a href="">Series</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </header>
+        <img src="" alt="">
+    </section>
+
+    <section class="second">
+        <div class="contenedor-max">
+            <div class="row-f ais">
+                <div class="filtros">
+                    <img src="" alt="">
+                    <ul>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Films</a></li>
+                        <li><a href="">Series</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="contenido">
+                    <div>
+                        <h2>About us</h2>
+                        <p>Somos una productora audiovisual latinoamericana con base en Lima, Perú.
+                            <br><br>
+                            Nos enfocamos en el desarrollo y producción de contenidos para todos los soportes, con premisas
+                            originales que cautivan al espectador, rompen con los esquemas del género, y provocan una
+                            conversación.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>El colchón team</h2>
+                        <ul class="content">
+                            <li class="menu">
+                                <ul>
+                                    <li class="button">
+                                        <a href="#">Daniel Rodríguez Risco</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <p>Daniel es un director, escritor y productor peruano. Su primer corto, El Colchón, obtuvo el
+                                            premio a Mejor Cortometraje en Conacine (Perú) y recibió una mención especial en el Festival
+                                            de Cine de Cartagena. Su siguiente corto, Triunfador, fue seleccionado en el Festival du Court
+                                            Métrages de Clermont-Ferrand. Daniel recibió una beca para estudiar una MFA in Film en la
+                                            Tisch School of the Arts de NYU. Luego de eso, dirigió El Diente de Oro, que ganó el Premio del
+                                            Jurado en el Festival Internacional de Cine de Montreal, presidido por Theo Angelopolous. Su
+                                            último corto, Cuellos Almidonados, filmado durante la pandemia, inició hace poco su ruta por
+                                            festivales
+                                            <br><br>
+                                            Su primer largometraje, El Acuarelista, obtuvo el apoyo del Global Film Initiative. Por su
+                                            siguiente película, El Vientre, una coproducción con Explora Films (España), fue nominado a
+                                            Mejor Director en el Festival Internacional de Cine de Vancouver. Sus películas, entre las que
+                                            también figuran No estamos solos y Siete Semillas, han tenido gran distribución en cines en
+                                            Latinoamérica y han sido adquiridas por HBO, Netflix, Fox, Canal Plus, entre otros.
+                                            <br><br>
+                                            Actualmente está desarrollando otras películas y series.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu">
+                                <ul>
+                                    <li class="button">
+                                        <a href="#">Lucía Utano</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <p>Licenciada en comunicación audiovisual de la Universidad de Lima, Lucía ha producido casi
+                                            una decena de obras de teatro y dos cortometrajes. Elepé, su primer corto, fue seleccionado en
+                                            el marco del Festival de Cine de Lima. Alienación, dirigido por Alex Fischman, fue seleccionadoen el Aestethic Film Festival y en el Rhode Island Film Festival. También quedó como semifinalista en el Festival Internacional de Cine de Buenos Aires y ganó el Premio de Diversidad en las Artes del Los Angeles Diversity Film Festival. Actualmente está produciendo Trilogía Muda, un mediometraje que incluye El Colchón, El Diente de Oro y Cuellos Almidonados.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+        	$.easing.def = "easeOutBounce";
+        	$('li.button a').click(function(e){
+        		var dropDown = $(this).parent().next();
+        		$('.dropdown').not(dropDown).slideUp('slow');
+        		dropDown.slideToggle('slow');
+        		e.preventDefault();
+        	})
+        });
+    </script>
+</body>
+</html>

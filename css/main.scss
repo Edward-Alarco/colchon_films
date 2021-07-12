@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'Myriad';
+    src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Myriad', serif;
+}
+body{
+    font-size: 16px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+img{
+    vertical-align: top;
+    height: auto;
+}
+.row-f{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &.aic{
+        align-items: center;
+    }
+    &.ais{
+        align-items: start;
+    }
+}
+img{
+    vertical-align: top;
+    height: auto;
+}
+header.top{
+    width: 100%;
+    padding: 2.25rem 0 0.8rem;
+    background: black;
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        li{
+            margin: 0 3rem;
+            color: white;
+            a{
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 600;
+            }
+        }
+    }
+}
+section.hero{
+    background: #000;
+    display: grid;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    header.medio{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        padding: 2rem 0;
+        background: white;
+        ul{
+            display: flex;
+            margin: 0 auto;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            li{
+                margin: 0 3rem;
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    font-weight: 600;
+                    color: #000;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    img{
+        width: 300px;
+    }
+}
+
+section.second{
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 4rem 0 7rem;
+    .contenedor-max{
+        width: 90%;
+        display: block;
+        margin: 0 0 0 auto;
+        padding-right: 2rem;
+        .row-f{
+            .filtros{
+                width: 150px;
+                img{
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                }
+                ul{
+                    width: 100%;
+                    li{
+                        margin: 1.5rem 0;
+                        width: 100%;
+                        background: #000;
+                        border-radius: 0;
+                        padding: 10px 0;
+                        text-align: center;
+                        a{
+                            color: white;
+                            font-size: 1.1rem;
+                            font-weight: normal;
+                        }
+                        &:first-child{
+                            margin-top: 0;
+                        }
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .contenido{
+                width: calc(100% - 250px);
+                div{
+                    width: 100%;
+                    &:nth-child(1){
+                        margin-bottom: 4rem;
+                    }
+                    h2{
+                        font-size: 1.6rem;
+                        text-transform: uppercase;
+                        margin-bottom: 1.75rem;
+                        padding-left: 2rem;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                    }
+                    ul.content{
+                        font-size: 1.1rem;
+                        width: 100%;
+                        li.menu{
+                            width: 100%;
+                            margin-bottom: 1.4rem;
+                            ul{
+                                width: 100%;
+                                li.button{
+                                    a{
+                                        color: black;
+                                        font-weight: bold;
+                                        text-transform: capitalize;
+                                        font-size: 1.3rem;
+                                    }
+                                }
+                                li.dropdown{
+                                    display: none;
+                                    width: 90%;
+                                    p{
+                                        margin-top: 1rem;
+                                        font-weight: normal;
+                                        font-size: 1.1rem;
+                                        color: #000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.hero-film{
+    width: 100%;
+    height: 100vh;
+    .hero-top{
+        height: 65vh;
+        position: relative;
+        background: url('https://picsum.photos/800/400');
+        background-repeat: no-repeat;
+        background-size: cover;
+        h1{
+            position: absolute;
+            width: fit-content;
+            bottom: 16px;
+            color: white;
+            left: 50px;
+            font-size: 2.5rem;
+        }
+        ul{
+            display: flex;
+            padding: 2rem;
+            justify-content: flex-end;
+            li{
+                margin: 0 2rem;
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .hero-bottom{
+        width: 100%;
+        height: 35vh;
+        padding-left: 50px;
+        padding-right: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .info{
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 1rem;
+            p{
+                font-size: 1.1rem;
+                color: black;
+            }
+            a{
+                background: black;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                width: 230px;
+                font-size: 1.25rem;
+                text-transform: uppercase;
+                margin-right: 10%;
+            }
+        }
+        .info-extra{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div.reparto{
+                width: 45%;
+                p{
+                    font-size: 1.1rem;
+                    color: black;
+                    margin-bottom: 1.2rem;
+                }
+                div{
+                    p{
+                        font-size: 1.1rem;
+                        color: black;
+                        margin-bottom: 0;
+                    }
+                    ul{
+                        column-count: 2;
+                        width: fit-content;
+                        li{
+                            font-size: 1.1rem;
+                            width: fit-content;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            div.descripcion{
+                width: 45%;
+                p{
+                    font-size: 1.1rem;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+section.informacion-film{
+    width: 100%;
+    padding: 4rem 16px 4rem 50px;
+    .row-f{
+        .content{
+            width: 49.75%;
+            h5{
+                font-size: 1.1rem;
+            }
+            ul{
+                margin: 1.75rem 0;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                li{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .portrait{
+            width: 49.75%;
+            img{
+                display: block;
+                margin: 0 auto;
+                width: fit-content;
+            }
+        }
+    }
+}
